@@ -1,0 +1,13 @@
+name: NetObjex Accenture Travel Adapter
+description: An external adapter that fetches traveller's water and power consumption from NetObjex Matrix.
+node_identifier: netobjexget
+platforms:
+  - Docker
+  - AWS Lambda
+  - GCP Functions
+data_sources:
+  - name: NetObjex Inc.
+    url: https://www.netobjex.com
+parameters:
+  - filter
+  - endpoint
