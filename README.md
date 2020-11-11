@@ -1,9 +1,9 @@
-### Official Accenture Travel Chainlink external adapter created by NetObjex
+# Official Accenture Travel Chainlink external adapter created by NetObjex
 
 ## Get your own API-KEY
 
-Use an environment variable to store and export the NETOBJEX_API_KEY
-To request for a key, enter your org-details and email ID in this [link](https://chainlink-accenture-demo.surge.sh/api)
+### Use an environment variable to store and export the NETOBJEX_API_KEY
+To request for a personal key, enter your org-details and email ID in this [link](https://chainlink-accenture-demo.surge.sh/api)
 
 
 ## Install Locally
