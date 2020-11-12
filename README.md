@@ -1,9 +1,9 @@
-# Official Accenture Travel Chainlink external adapter created by NetObjex
+# Official Chainlink external adapter created by NetObjex
 
 ## Get your own API-KEY
 
 ### Use an environment variable to store and export the NETOBJEX_API_KEY
-To request for a personal key, enter your org-details and email ID in this [link](https://chainlink-accenture-demo.surge.sh/api)
+Functionality to request for a personal key will go live shortly
 
 
 ## Install Locally
@@ -35,49 +35,14 @@ yarn start
 If you wish to use Docker to run the adapter, you can build the image by running the following command:
 
 ```bash
-docker build . -t netobjex-ext-adapter-accenture
+docker build . -t netobjex-external-adapter
 ```
 
 Then run it with:
 
 ```bash
-docker run -e NETOBJEX_API_KEY=************ -p 8080:8080 netobjex-ext-adapter-accenture
+docker run -e NETOBJEX_API_KEY=************ -p 8080:8080 netobjex-external-adapter
 ```
-
-## Sample call:
-```
-curl -X POST "http://52.151.17.41:8080" -H "Content-Type:application/json" --data '{ "filter": "{'where':{'id':'c7d2a56a-bd4f-4565-b16e-858c83521e16'}}","endpoint": "orders/getorders" }'
-```
-Sample return:
-```
-{
-    "jobRunID": 10,
-    "data": {
-        "items": [
-            {
-                "id": "c7d2a56a-bd4f-4565-b16e-858c83521e16",
-                "verstamp": "1",
-                "created": "2020-08-26T11:05:38.269Z",
-                "updated": "2020-08-26T11:06:12.035Z",
-                "userid": "0a8ead37-a505-4172-8c0a-3c4cb0feff6e",
-                "locationid": "0caccdb9-74f5-444b-a8fd-69b98fe625b4",
-                "numofdays": 3,
-                "totalwater": 0,
-                "total_energy": null,
-                "checkin_time": 1597747153,
-                "checkout_time": 1598266956
-            }
-        ],
-        "total": 1,
-        "limit": 20,
-        "skip": 0,
-        "result": "water:0,energy:0"
-    },
-    "result": "water:0,energy:0",
-    "statusCode": 200
-}
-```
-
 ## Serverless hosts
 
 After [installing locally](#install-locally):
